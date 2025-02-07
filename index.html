@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckboggg</title>
+    <style>
+        body {
+            background: linear-gradient(270deg, red, yellow, maroon, pink, purple);
+            background-size: 1000% 1000%;
+            animation: gradient 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        .button-container a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #333;
+            border-radius: 5px;
+            position: relative;
+        }
+        .button-container a:hover::after {
+            content: attr(data-hover);
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 3px;
+            white-space: nowrap;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="feqaskque.html" data-hover="Frequently Asked Questions">FAQ</a>
+        <a href="creator.html" data-hover="Learn About The Creator">The Creator</a>
+        <a href="web.html" data-hover="See What Websites I've Made">Websites</a>
+        <a href="desc.html" data-hover="Learn about the past">Description</a>
+    </div>
+</body>
+</html>
